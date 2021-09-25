@@ -1,0 +1,17 @@
+<!--pages/kj/ForAndSum/index.wxml-->
+<view class='box'>
+  <view class='title'>利息计算器</view>
+  <input placeholder="请输入你的名字" placeholder-class="placeholder" bindinput='nameInput'></input>
+  <input placeholder="请输入本金" placeholder-class="placeholder" bindinput='PInput' type='number'></input>
+  <input placeholder="请输入利率" placeholder-class="placeholder" bindinput='IRInput' type='number'></input>
+  <input placeholder="请输入存取年期" placeholder-class="placeholder" bindinput='APInput' type='number'></input>
+  <button bindtap='mysubmit'>提交</button>
+  <view hidden='{{flag}}' class='content'>
+    <view class='content-item'>姓名:{{name}}</view>
+    <view class='content-item'>每月本金：{{P}}</view>
+    <view class='content-item'>利率:{{IR}}</view>
+    <view class='content-item'>所得利息总计:{{I}}</view>
+    <view class='content-item'>存取年限后总本金:{{PADNI}}</view>
+  </view>
+  /**电科19-1 刘浩201923010117**/
+</view>
